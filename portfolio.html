@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith's Portfoilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(2, 107, 118);
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(37, 78, 78);
+            font-family: poppins;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(15, 171, 233);
+            font-size: 1.04rem;
+        }
+
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left{
+            font-size: 2rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstSection > div{
+            width: 30%;
+            font-family: poppins;
+        }
+
+        .leftSection{
+            font-size: 3rem;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #62c1d2;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img{
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple{
+            color: rgb(4, 250, 168);
+        }
+
+        #element{
+            color: rgb(4, 250, 168);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            font-family: poppins;   
+        }
+        .thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            font-family: poppins;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .footer {
+            background-color: rgb(37, 78, 78);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-family: poppins;
+        }
+
+
+
+#github {
+    background-color: #62c1d2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rohith's Portfoilo</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Gadepaka Rohith</span>
+                <div>and i am a passionated</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Resume</button>
+                    <a href="https://github.com/ROHITH250" id="github" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dpg.png" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="secondSection">
+            <h1>Education</h1>
+            <br>
+            <p>Bachelor of Computer Science and Engineering</p>
+            <p><i>Malla Reddy College of Engineering and Technology</i></p>
+
+            
+            <br>
+            <p>Intermediate (10+2),Board ofIntermediate Education</p>
+            <p><i>Narayana Junior College</i></p>
+
+            
+            <br>
+            <p>High School (10th Grade),Board of Secondary Education</p>
+            <p><i>Narayana High School</i></p>
+
+        </section>
+        <hr>
+        <section class="thirdSection">
+            <h1>Projects</h1>
+            <br>
+            <p>ATM Security System :</p>
+            <p><i>Deals Security in ATM Transaction. Verifies the User before entering into the process.</i></p>
+            <br>
+            <p>Blood Care Network :</p>
+            <p><i>Provides Information about the Blood Donors present in the near by area.</i></p>
+            <br>
+            <br>
+        </section>
+        <footer class="footer">
+            <p>Contact: Rohithraj250103@gmail.com | Phone: 9247859447</p>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'Web Designer.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
